@@ -1,0 +1,70 @@
+*{
+    margin-left:100px auto;
+    padding:0;
+}
+.design{
+    width:250px;
+    padding:20px 10px;
+    color:gray;
+    border-radius:10px;
+    -webkit-appearance:button;
+    /*pt chrome si safari*/
+    background-image:url(arrow.png),-webkit-linear-gradient(lightgray,white,lightgray);
+       /*dupa virgula vine al doilea background*/
+    background-position:100%;
+    /* background-position:100% 5px,100%;*/
+    /*100% reprezinta dreapta 0 stanga 50 centru, a doua valoare este distanta de sus in jos*/
+    background-repeat: no-repeat;
+    background-size: 50px,cover;
+    /*ce e dupa virgula sunt caracteristicile celui de-al doilea background*/
+    box-shadow: 3px 4px 5px 6px  red;
+    /*h offset v offset blur radius spread radius*/
+    /*inset da impresia ca butonul este apasat*/
+
+}
+button[type=submit] {
+    background-color: red;
+    font-size: 16px;
+    box-shadow:6px 6px #000;
+    text-shadow: 1px 1px black;
+    color: aliceblue;
+    border: 2px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+    float: center;
+}
+button[type=submit]:hover {
+    background-color: #6ddb72;
+    box-shadow: inset 7px 7px 0 px #000;
+}
+button[type=submit]:active {
+    box-shadow: inset 2px 6px 15px gray;
+    text-shadow: 0px 0px black;
+}
+.bg{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    }
+.bg:hover{
+    background-color: gray;
+}
+#check1 {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+/*clasa spanului*/
+.check{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: azure;
+    text-align: center;
+}
+input:checked+ .check{
+    display: block;
+}

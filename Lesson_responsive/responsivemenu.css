@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 none;
+    line-height: 1.35em;
+}
+html{
+    width: 100%;
+    height: 100%;
+
+}
+header{
+    width: 100%;
+    background-color: aqua;
+
+}
+nav{
+    margin-bottom: 10px;
+    display: table;
+    margin: 0 auto;
+}
+nav>ul>li{
+    list-style: none;
+    float: left;
+    margin-right: 1px;
+}
+nav>ul>li>a{
+    display: inline-block;
+    background-color: burlywood;
+    color: gray;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 30px;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+nav ul li a div{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.mobile{
+    display:none;
+}
+@media screen and (max-width:414px){
+    .ascuns{
+        display: none;
+    }
+    .mobile{
+        display:block;
+    }
+    nav{
+        width:100%;
+        display:block;
+        position:absolute;
+        left:0;
+        top:100px;
+    }
+    nav>ul>li{
+        float:none;
+        margin-bottom:1px;
+    }
+    nav>ul>li>a{
+        width:100%;
+    }
+    header{
+        display:table;
+        padding:20px;
+        color:burlywood;
+        font-size:28px;
+    }
+    .mobile p{
+        float:left;
+    }
+    .mobile p span{
+        padding-right:10px;
+    }
+
+    .mobile a img{
+        width:50px;
+        float:right;
+        position:relative;
+        top:10px;
+    }
+
+    .mobile a{
+        display:block;
+        float:right;
+    }
+    img.mobile{
+        position:absolute;
+        width:50px;
+        top:82px;
+        right:20px;
+        transform: rotate(180deg);
+    }
+}

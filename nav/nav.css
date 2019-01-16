@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+background-color: lightsteelblue;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+height: 100%;
+}
+nav{
+    padding-top: 20px;
+    display:table;
+    margin: 0 auto;
+    }
+    /*semnul> indica referinta doar asupra primului li din ulul navului */
+nav>ul>li:hover>.submenu{
+   height: 200px;
+    /* var 2 opacity:1;*/
+   /* var 1 display:block;*/
+}
+nav>ul>li{
+list-style: none;
+float: left;
+}
+/* daca vreau tranzitie si pe a si pe hover punem pe a tranzitia */
+nav>ul>li>a{
+    transition: all 0.5s;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius:10px 10px 0 0;
+    width: 100px;
+    display: block;
+    text-align: center;
+    }
+nav>ul>li>a:hover{
+    background-color: lightgrey;
+    color: darkblue;
+}
+.submenu{
+position: absolute;
+margin-top: 10px;
+/* submeniu turtit, iar animatia sa inceapa de sus*/
+height: 0;
+/* marire cu tranzitie*/
+transition: height 0.5s ease;
+/*sa fie ascuns pana ducem cursorul pe link*/
+overflow: hidden;
+/* display none dispare submeniul si apare prin setarea din nav>ul>li;hover*/
+/* var 1 display:none;*/
+/* var 2 opacity:0;
+transition:opacity 1s;*/
+}
+.submenu li{
+border-bottom: 1px solid white;
+list-style: none;
+}
+.submenu li a{
+/* aurile sunt inline si nu functioneaza padding*/
+    display: block;
+background-color: darkgray;
+color:darkblue;
+/*line-height:18px;*/
+padding: 5px 20px;
+text-decoration: none;
+width: 200px;
+}
+.submenu li a:hover{
+background-color: darkgrey;
+color: white;
+}

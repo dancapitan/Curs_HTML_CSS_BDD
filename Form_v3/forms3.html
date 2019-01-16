@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="forms3.css" />
+    
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    html{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    nav{
+        display:table;
+        margin: 0 auto;
+    }
+    nav ul li{
+        float:left;
+        list-style: none;
+    }
+    nav ul li a{
+        text-decoration:none;
+        background-color: purple;
+        color: aqua;
+        padding:10px 20px;
+        display:inline-block;
+        border-radius: 0 0 15px 15px;
+        transition: all 0.5s;
+
+    }
+    nav ul li a:hover{
+        background-color: cadetblue;
+        color:black;
+        padding:20px 20px;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h2>Contact us</h2>
+            <div class="line"></div>
+            <p>Feel free to contact us</p>
+            <form id="myform">
+                <div class="col1">
+                      <label for="name">Name *</label>
+                      <input type="text"  id="name" required>
+
+                      <label for="email">Email *</label>
+                      <input type="email"  id="email" required>
+
+                      <label for="website">Website</label>
+                      <input type="website"  id="website">
+
+                      <label for="">Security code*</label>
+                      <img src="https://d2v4zi8pl64nxt.cloudfront.net/having-a-captcha-is-killing-your-conversion-rate/51fe24b5d00678.72646625.png" alt="">
+                      <button><img src="http://cdn.onlinewebfonts.com/svg/img_72585.png" alt=""></button>
+                     <input type="text" placeholder="CAPTCHA">
+                     
+                      <input type="checkbox"  id="check">
+                      <label for="check">send me a copy</label>
+
+                </div>
+                <div class="col2">
+                    <p>Where did you here about us</p>
+                    <div>
+                        <input type="radio" name="PR" id="radio1"><label for="radio1">A friend</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="PR" id="radio2"><label for="radio2">Web<Web/label>
+                    </div> 
+                    <div>         
+                    <input type="radio" name="PR" id="radio3"><label for="radio3">Social Network</label>
+                    </div>     
+                    <label for="comment">Message *</label>
+                    <textarea id="comment" form="myform" placeholder="Message:"></textarea>
+
+                    <input type="submit" value="Send">
+
+                </div>
+        <!--harta-->
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.630431770887!2d26.097960951183683!3d44.46124880771825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8a7ae24bf8f%3A0x31128c60c930eac9!2sSTEP+IT+Academy!5e0!3m2!1sro!2sro!4v1544469751640" width="100%" height="250px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </form>
+</body>
+</html>

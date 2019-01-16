@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box
+}
+html, body{
+    width:100%;
+    height;100%;
+}
+table{
+    border-collapse:collapse
+}
+th, td {
+    text-align: center;
+}
+
+th{
+    color: white;
+    padding:20px;
+}
+table tr:first-child th:nth-child(2){
+    background-color: #FE756F;
+}
+table tr:first-child th:nth-child(3){
+    background-color: #87e331;
+}
+table tr:first-child th:nth-child(4){
+    background-color: #73b2c3;
+}
+table tr td:nth-child (2) {
+    border-left:1px solid #FE756F;
+
+}

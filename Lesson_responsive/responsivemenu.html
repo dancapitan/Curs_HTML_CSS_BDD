@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Menu</title>
+    <meta name="deion" content="Welcome to my responsive website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-sclabe=no"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="responsivemenu.css" />
+  <script>
+  function show() {
+    var x = document.getElementById("TopNAV");
+    if (x.className == "ascuns") {
+        x.className += "activ";
+    } else {
+        x.className = "ascuns";
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <div class="mobile">
+            <p>
+                <span>≡</span>Dropdown Menu
+            </p>
+            <a onclick="show()" href="#"><img src="arrow2.png" alt=""></a>
+        </div>
+        <img class="mobile" src="arrrow1.png" alt="">
+        <nav id="TopNAV" class="ascuns" role="navigation">
+            <ul>
+                <li><a href="#"><div><img src="house.png" alt=""></div>Home</a></li>
+                <li><a href="#"><div><img src="mail.png" alt="" ></div>Messages</a></li>
+                <li><a href="#"><div><img src="roata.png" alt=""></div>Settings</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
