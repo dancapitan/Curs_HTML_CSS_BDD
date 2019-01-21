@@ -35,9 +35,11 @@ h2{font-size: 3rem;}
 /*SECTIUNEA1*/
 .col1 h1{
     color: yellow;
+    margin-bottom: 2rem;
 }
 .col1 h2{
     color: yellow;
+    margin-bottom: 2rem;
 }
 .col1 li{
     list-style: none;
@@ -63,12 +65,12 @@ h2{font-size: 3rem;}
     font-size: 10rem;
     line-height: 9rem;
 }
-#getStarted{
+.getStarted{
     border: 0 none;
-    width: 100%;
     outline:none;
     cursor: pointer;
     background-color: yellowgreen;
+    font-size: 2.2rem;
     color: rgba(10, 120, 100, 0.8);
     padding:2rem 2rem;
     border-radius:2px;
@@ -76,10 +78,58 @@ h2{font-size: 3rem;}
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
 }
-#getStarted:hover{
+.getStarted:hover{
     background-color: red;
     color: white;
     box-shadow: none;
 }
-
 /*SECTIUNEA1*/
+
+
+/*SECTIUNEA2*/
+.box1{
+    width: 32%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    float:left;
+    margin-right: 2rem;
+}
+.box1:hover{
+    width: 30%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.box1>div:first-child{
+    background-color: yellow;
+    padding: 2rem;
+}
+.box1>:last-child{
+    background-color: white;
+    padding: 2rem;
+}
+.box1 li{
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: grey;
+}
+.box1 ul{
+    margin-bottom: 2rem;
+}
+.section2 .getStarted{
+    background-color: rgba(10, 120, 100, 0.8);
+    color: white;
+    width: 100%;
+}
+.section2 .getStarted:hover{
+    background-color: rgb(10, 120, 100);
+    color: white;
+    width: 100%;
+}
+.box1 span{
+    font-size: 6rem;
+    color: rgb(10, 120, 100);
+}
+.section2 div.box1:last-child{
+    margin-right: 0;
+}
+
+/*SECTIUNEA2*/

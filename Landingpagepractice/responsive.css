@@ -1,0 +1,21 @@
+@media screen and (max-width:1024px){
+    .container{
+        width:calc(100% - 100px);
+    }
+
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+    .col1{
+        float: none;
+    }
+    .col2{
+        clear: both;
+        float: none;
+        padding-top: 2rem;
+        text-align:left;
+        color: white;
+    }
+}
