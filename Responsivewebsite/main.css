@@ -451,13 +451,15 @@ footer h2{
     color: #ffffff;
     font-size: 2rem;
 }
+.listf li{
+    list-style:none;
+}
 .listf li a{
     display: inline-block;
     color:#feea3a;
     margin-top:25px;
     font-size:1.5rem;
     line-height: 15px;
-    list-style: none;
     vertical-align: top;
 }
 .gridf1{
@@ -472,12 +474,12 @@ footer h2{
     content: "\e0d7";
 }
 .address, .phone{
-    font-size: 1.5px;
-    line-height: 42px;
+    font-size: 1.5rem;
+    line-height: 40px;
     color: #feea3a;
 }
 .phone::before{
-    content: "\e0f4";
+    content: "\2706";
 }
 
 
