@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My website</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+           window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+</head>
+<body>
+
+<!-- Navigation Menu -->
+
+<nav role="navigation">
+	<ul>
+		<li><a href="#Home">HOME</a></li>
+		<li style="color:white;">&darr;</li>
+		<li><a href="#About">ABOUT</a></li>
+		<li style="color:white;">&darr;</li>
+		<li><a href="#SpecialGuest">SPECIAL GUEST</a></li>
+		<li style="color:white;">&darr;</li>
+		<li><a href="#Agenda">AGENDA</a></li>
+		<li style="color:white;">&darr;</li>
+		<li><a href="#BuyTickets">BUY TICKETS</a></li>
+	</ul>
+</nav>
+
+<!-- Navigation Menu -->
+
+<!-- First Box -->
+
+<div class="imagebackground center" id="Home">
+
+	<img class="logo center" src="logo.png"/>
+	
+	<p class="title center"><span style="color:#8afffc">//</span> A 24-hour coding event inspiring women to innovate and create.</p>
+	
+	<div class="line center"></div>
+
+	<p class="text center">Minneapolis | Denver | Seattle</p>
+
+	<a href="" class="button center">REGISTER NOW</a>
+
+</div>
+<!-- First Box -->
+
+<!-- Second Box -->
+
+<div class="center secondbox" id="About">
+
+	<iframe style="float:right;" width="417" height="271" src="https://www.youtube.com/embed/tzRn0fSBKTo" frameborder="0" allowfullscreen></iframe>
+
+	<h1 style="color:white"><span style="color:#6818a5"><</span> What is CodeIt <span style="color:#6818a5">/></span></h1>
+</br>
+	<p style="color:white;">CodeIt is a 24-hour coding event inspiring women to innovate and create. CodeIt encourages women to stand up and stand out in such a male-dominated tech industry, empowering them to collaborate together to build amazing things in one fun-filled, coffee-filled, 24-hour long coding extravaganza.</p>
+	<p style="color:white;">At the end of the 24 hours, various awards will be given out to the different teams, judging projects on creativity, difficulty, humor, and more! All in all, this event is less of a competition and more of an excuse to drink coffee, stay up late, and make connections with other powerful women.</p>
+</div>
+
+<!-- Second Box -->
+
+<!-- Third Box -->
+
+<div class="center thirdbox" id="SpecialGuest">
+	<h1 style="color:white;text-align:center;"><span style="color:#46bec2"><</span> Special profiles <span style="color:#46bec2">/></span></h1>
+
+	<p style="color:white;text-align:center;">CodeIt is powered by some amazing women in the tech world. Not only do these women have some major coding chops, but they have also been warriors for women in the tech industry, overcoming stereotypes and striving for excellence.</p>
+	
+</br>
+<div class="center">
+	<div class="box">
+		<img src="profiles-1.jpg" />
+		<p class="boxtitle">Vanessa Blue</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">CEO OF TECHWOMEN</p>
+		<p class="boxtext">Vanessa is a self-proclaimed nerd who loves to immerse herself in code all day long.</p>
+	</div>
+
+	<div class="box">
+		<img src="profiles-2.jpg" />
+		<p class="boxtitle">Aleigh Johnson</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">CO-FOUNDER OF CODEGIRLS</p>
+		<p class="boxtext">Aleigh is the founder of the new nonprofit CodeGirls and is a proud cat mom of 4 lovable furballs.</p>
+	</div>
+
+	<div class="box">
+		<img src="profiles-3.jpg" />
+		<p class="boxtitle">Marlee Williams</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">GAME DEVELOPER</p>
+		<p class="boxtext">Marlee is a huge gamer and loves to design and develop her own zombie video games. Brainz.</p>
+	</div>
+</div>
+</div>
+<!-- Third Box -->
+
+<!-- Forth Box -->
+
+<div class="forthbox" id="Agenda">
+	<h1 style="text-align:center;color:#431f5e"><span style="color:white;"><</span> What's the Plan? <span style="color:white">/></span></h1>
+	<p style="text-align:center;color:#431f5e;">24 hours may seem like a long time, but when your nose is to the grindstone, it's easy to lose track of time. That's why we created this nifty schedule for you to check out and remind yourself to take a break or two.</p>
+<table align="center">
+	<tr style="font-weight:bold;">
+		<td style="color:white;">&raquo;</td>
+		<td>8:00 - 9:00 AM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>1:00 - 5:00 PM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>9:00 - 10:00 AM</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Registration & breakfast</td>
+		<td></td>
+		<td>Work time</td>
+		<td></td>
+		<td>Final project presentation</td>
+	</tr>
+	<tr style="height:1em;">
+		<td></td>
+	</tr>
+
+	<tr style="font-weight:bold;">
+		<td style="color:white;">&raquo;</td>
+		<td>9:00 - 10:00 AM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>5:00 - 6:00 PM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>10:00 - 10:30 AM</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Team formation</td>
+		<td></td>
+		<td>Dinner and happy hour</td>
+		<td></td>
+		<td>Judge deliberation</td>
+	</tr>
+	<tr style="height:1em;">
+		<td></td>
+	</tr>
+	<tr style="font-weight:bold;">
+		<td style="color:white;">&raquo;</td>
+		<td>10:00 AM - 12:00 PM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>6:00 PM - 8:00 AM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>10:30 AM - 11:30 AM</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Work time</td>
+		<td></td>
+		<td>Work time</td>
+		<td></td>
+		<td>Awards ceremony</td>
+	</tr>
+	<tr style="height:1em;">
+		<td></td>
+	</tr>
+	<tr style="font-weight:bold;">
+		<td style="color:white;">&raquo;</td>
+		<td>12:00 - 1:00 PM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>8:00 - 9:00 AM</td>
+		<td style="color:white;">&raquo;</td>
+		<td>11:30 AM - 12:30 PM</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Lunch</td>
+		<td></td>
+		<td>Breakfast</td>
+		<td></td>
+		<td>Lunch & goodbyes</td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+
+</table>
+</div>
+<!-- Forth Box -->
+
+<!-- Fifth Box -->
+<div class="center fifthbox" id="BuyTickets">
+<h1 style="color:white;text-align:center;"><span style="color:#46bec2"><</span> CodeIt Locations <span style="color:#46bec2">/></span></h1>
+
+<p style="color:white;text-align:center;">We want this event to be HUGE, and therefore CodeIt isn't limited to one metropolitan area. We've chosen three host cities across the United States and hope to expand the event even further in upcoming years.</p>
+</br>
+<div class="center">
+	<div class="box">
+		<img src="cta-1.jpg" />
+		<p class="boxtitle">Minneapolis</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">SEPTEMBER 21 - 22, 2015</p>
+		<a href="" class="button2 center">REGISTER NOW</a>
+	</div>
+
+	<div class="box">
+		<img src="cta-2.jpg" />
+		<p class="boxtitle">Denver</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">OCTOBER 17 - 18, 2015</p>
+		<a href="" class="button2 center">REGISTER NOW</a>
+	</div>
+
+	<div class="box">
+		<img src="cta-3.jpg" />
+		<p class="boxtitle">Seattle</p>
+		<div class="line2"></div>
+		<p class="boxsubtitle">NOVEMBER 20 - 21, 2015</p>
+		<a href="" class="button2 center">REGISTER NOW</a>
+	</div>
+</div>
+</div>
+<!-- Fifth Box -->
+
+<!-- Last Box -->
+<div class="lastbox">
+	<img class="center logo2" src="logo.png"/>
+	<div class="center">
+		<a href=""><img style="margin-left:1em;" src="facebook.png" /></a>
+		<a href=""><img style="margin-left:1em;" src="twitter.png" /></a>
+		<a href=""><img style="margin-left:1em;" src="linkedin.png" /></a>
+		<a href=""><img style="margin-left:1em;" src="google.png" /></a>
+	</div>
+	<p style="color:white;text-align:center;">2015 Company Name | <a href="" class="link">Legal Informationp</a></p>
+</div>
+<!-- Last Box -->
+
+
+</body>
+</html>
